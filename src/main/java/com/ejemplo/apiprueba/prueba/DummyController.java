@@ -11,11 +11,11 @@ public class DummyController {
     @GetMapping("/dummy/ping")
     public ResponseEntity<String> ping(){
         log.info("GET ping");
-        return ResponseEntity.ok("pong pong pong");
+        return ResponseEntity.ok("pong pong pong ping");
     }
     @GetMapping("/dummy/tik")
     public ResponseEntity<String> tik(){
         log.info("GET tik");
-        return ResponseEntity.ok("tok tok tok");
+        return ResponseEntity.ok("tok tok tok ping");
     }
 }
