@@ -13,4 +13,9 @@ public class DummyController {
         log.info("GET ping");
         return ResponseEntity.ok("pong");
     }
+    @GetMapping("/dummy/tik")
+    public ResponseEntity<String> tik(){
+        log.info("GET tik");
+        return ResponseEntity.ok("tok");
+    }
 }
